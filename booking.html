@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Room | MARKUSSH HOTEL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">MARKUSSH <span>HOTEL</span></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="rooms.html">Rooms & Prices</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-book active">Book Now</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <div>
+        <p class="small-title">RESERVE YOUR STAY</p>
+        <h1>Book Your Room</h1>
+        <p>We look forward to welcoming you.</p>
+    </div>
+</section>
+
+<section class="section booking-section">
+
+    <div class="booking-box">
+
+        <p class="small-title">ONLINE RESERVATION</p>
+        <h2>Booking Request Form</h2>
+
+        <p class="booking-intro">
+            Complete the form below and send your booking request
+            directly to MARKUSSH HOTEL through WhatsApp.
+        </p>
+
+        <form id="bookingForm">
+
+            <label>Full Name</label>
+            <input type="text" id="customerName"
+                   placeholder="Enter your full name" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="customerPhone"
+                   placeholder="Your telephone number" required>
+
+            <label>Email Address</label>
+            <input type="email" id="customerEmail"
+                   placeholder="Your email address">
+
+            <label>Select Room</label>
+            <select id="roomType" required>
+                <option value="">Choose a room</option>
+                <option value="Single - UGX 90,000 per night">
+                    Single - UGX 90,000
+                </option>
+                <option value="Double - UGX 130,000 per night">
+                    Double - UGX 130,000
+                </option>
+                <option value="Deluxe - Price on request">
+                    Deluxe - Price on request
+                </option>
+            </select>
+
+            <label>Check-in Date</label>
+            <input type="date" id="checkIn" required>
+
+            <label>Check-out Date</label>
+            <input type="date" id="checkOut" required>
+
+            <label>Number of Guests</label>
+            <input type="number" id="guests" min="1"
+                   value="1" required>
+
+            <label>Additional Requests</label>
+            <textarea id="requests"
+                      placeholder="Any special requests?"
+                      rows="4"></textarea>
+
+            <button type="submit" class="btn booking-submit">
+                Send Booking Request via WhatsApp
+            </button>
+
+        </form>
+
+        <p class="form-note">
+            Your request will be sent to the hotel for confirmation.
+            Your room is not reserved until the hotel confirms availability.
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    <h2>MARKUSSH HOTEL</h2>
+    <p>Luxury | Comfort | Hospitality</p>
+    <p>© 2026 MARKUSSH HOTEL. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/256747189641" target="_blank">WhatsApp</a>
+<script src="js/script.js"></script>
+</body>
+</html>
